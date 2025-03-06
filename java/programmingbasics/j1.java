@@ -27,8 +27,8 @@ class j1
         // boolean b = true;
 
 
-//literals- 3,127,...
 
+//literals- 3,127,...
 //Type Conversion and Casting
         // int a = 257;
         // byte k = (byte) a;
@@ -85,5 +85,122 @@ class j1
         // boolean res = x>y || a<b;
 
         // System.out.println(!res);
+
+
+// CODITIONAL STATEMENT
+        // IF ELSE-
+
+        // int x = 12;
+        // if(x > 10 && x <= 20)
+        //      System.out.println("hlooo");
+        // else
+        //      System.out.println("hrlooo");
+        
+        // int s = 45;
+        // int h = 85;
+        // if(s > h)
+        // {
+        //      System.out.println("hlooo");
+        //      System.out.println("hooo");
+        // }
+        // else
+        //      System.out.println("hrlooo");
+
+        // int s = 45;
+        // int h = 85;
+        // int p = 0;
+
+        // if(s>h && s>p)
+        //      System.out.println(s);
+        // else if (h>s && h>p)
+        //      System.out.println(h);
+        // else
+        //      System.out.println(p);
+
+
+        //TERNARY OPERATOR
+
+        // int n = 5;
+        // int res = 0;
+        // res = n<2 == 0 ? 10 : 20;
+        // System.out.println(res);
+
+
+// SWITCH STATEMENT
+        // int n = 6;
+
+        // switch(n){
+        //      case 1:
+        //         System.out.println("Monday");
+        //         break;
+        //      case 2:
+        //         System.out.println("Tuersday");
+        //         break;
+        //      case 3:
+        //         System.out.println("Wednesday");
+        //         break;
+        //      case 4:
+        //         System.out.println("Thursday");
+        //         break;
+        //      case 5:
+        //         System.out.println("Friday");
+        //         break;
+        //      case 6:
+        //         System.out.println("Saturday");
+        //         break;
+        //      case 7:
+        //         System.out.println("Sunday");
+        //         break;
+
+        //      default:
+        //         System.out.println("enter valid number");
+        // }
+        
+        // String day = "Sunday";
+        // String res = "";
+
+        // switch(day)
+        //      {
+        //         case "Saturday", "Sunday" -> res = "6 am";
+        //         case "Monday" -> res = "8 am";
+        //         default -> res = "7 am";
+        //     } 
+        //     System.out.println(res);
+      
+
+// LOOPS- 
+        // WHILE LOOP
+        // int i = 1;
+        // while(i<=5)
+        // {
+        //     System.out.println("Hi, " + i);
+        //     int j = 1;
+        //     while(j<=3)
+        //     {
+        //         System.out.println("Hello " + j);
+        //         j++; 
+        //     }
+        //     i++;
+        // }
+        // System.out.println("byee "+ i);
+
+        // DO WHILE
+        // int j = 5;
+        // do
+        // {
+        //      System.out.println("Hi, " + j);
+        //      j++;
+        // } while (j<=4);
+
+        // FOR LOOP
+        // for(int i=1; i<=4; i++)
+        // {
+        //         System.out.println("Hiii " +i);
+        //         for(int j=1; j<=9; j++)
+        //         {
+        //              System.out.println("  " + (j+8) + "-" + (j+9));   
+        //         }
+        // }
+
     }
 }
