@@ -202,5 +202,30 @@ class j1
         //         }
         // }
 
+
+// OBJECTS- everything need obj 
+        // to add two numbers i need obj //OOP
+        // Object - Properties(knows) & Behaviours(does)
+        // Class - blueprint for obj
+        // Class -> JVM -> Obj
+
+        int num1 = 4;           //primitive var
+        int num2 = 7;
+
+        Calculator calc = new Calculator();                //reference var -> Object
+        int res = calc.add(num1 , num2);
+        System.out.println(res);
     }
+}
+
+class Calculator        //designing
+{
+        int a;          //variable 
+
+        public int add(int n1, int n2)        //method
+        {
+                // System.out.println("done");
+                int r = n1 + n2;
+                return r;
+        }
 }
