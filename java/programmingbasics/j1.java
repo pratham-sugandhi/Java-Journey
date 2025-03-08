@@ -215,17 +215,49 @@ class j1
         Calculator calc = new Calculator();                //reference var -> Object
         int res = calc.add(num1 , num2);
         System.out.println(res);
+
+        // Computer obj = new Computer();
+        // obj.playMusic();
+        // String str = obj.getMeAPen(10);
+        // System.out.println(str);
     }
 }
 
 class Calculator        //designing
 {
-        int a;          //variable 
+        int a;          //instantaneous variable- heap memo 
 
         public int add(int n1, int n2)        //method
         {
-                // System.out.println("done");
                 int r = n1 + n2;
                 return r;
         }
+
+        public int add(int n1, int n2, int n3)        //method
+        {
+                return n1 + n2 + n3;
+        }
+
+        public double add(double n1, int n2, int n3)        //method
+        {
+                return n1 + n2 + n3;
+        }
 }
+
+class Computer
+// {
+//     public void playMusic()
+//     {
+//         System.out.println("Playing");
+//     }
+
+//     public String getMeAPen(int cost)
+//     {
+//         if(cost >= 10)
+//             return "Pen";
+//         else 
+//             return "Nothing"; 
+//     }
+// }
+
+// Every method has thier own stack
