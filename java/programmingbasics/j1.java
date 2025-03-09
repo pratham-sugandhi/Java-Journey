@@ -1,4 +1,4 @@
-class j1
+public class j1
 {
     public static void main(String args[])
     {
@@ -212,18 +212,31 @@ class j1
         int num1 = 4;           //primitive var
         int num2 = 7;
 
-        Calculator calc = new Calculator();                //reference var -> Object
-        int res = calc.add(num1 , num2);
-        System.out.println(res);
+        // Calculator calc = new Calculator();                //reference var -> Object
+        // int res = calc.add(num1 , num2);
+        // System.out.println(res);
 
         // Computer obj = new Computer();
         // obj.playMusic();
         // String str = obj.getMeAPen(10);
         // System.out.println(str);
+
+// ARRAYS-
+        // int nums[] = {3,5,4,3};
+        // int nums[] = new int[4];
+        // nums[1] = 6;
+
+        // System.out.println(nums[1]);
+        // for(int i=0; i<=3; i++)
+        // {
+        //         System.out.println(nums[i]);
+        // }
+        
+        
     }
 }
 
-class Calculator        //designing
+// class Calculator        //designing
 {
         int a;          //instantaneous variable- heap memo 
 
@@ -244,7 +257,7 @@ class Calculator        //designing
         }
 }
 
-class Computer
+// class Computer
 // {
 //     public void playMusic()
 //     {
