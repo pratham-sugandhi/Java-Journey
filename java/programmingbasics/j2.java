@@ -36,20 +36,31 @@ class Mobile
     }
 }
 
-import java.util.Scanner;
+class A
+{
+    public void show()
+    {
+        System.out.println("In a show");
+    }
+}
+
+// import java.util.Scanner;
 
 public class j2
 {
     public static void main(String args[])
     {
 
-        Scanner sc = new Scanner(System.in);
+        A obj = new A();
+        obj.show();
 
-        int radius;
-        radius = sc.nextInt();
-        double pi = 3.1415;
-        double area = pi * radius * radius;
-        // Systebsbkfbm.out.println(area);
+        // Scanner sc = new Scanner(System.in);
+
+        // int radius;
+        // radius = sc.nextInt();
+        // double pi = 3.1415;
+        // double area = pi * radius * radius;
+        // // Systebsbkfbm.out.println(area);
 
 
 // ARRAY -2
@@ -189,6 +200,67 @@ public class j2
 
     // Class.forName("Mobile"); //will call static block
 
+
+// ENCAPSULATION- 
+    // GETTERS AND SETTERS-
+
+        // Human obj = new Human();
+        // Human obj1 = new Human(18, "Navin");
+
+        // System.out.println(obj.getName() + " : " + obj.getAge());
+        // System.out.println(obj1.getName() + " : " + obj1.getAge());        
+
+
+        // obj.setName("Pratham Sugandhi");
+        // obj.setAge(20);
+
+        // System.out.println(obj.getName() + " : " + obj.getAge());
+
+    // THIS KEYWORD- used to represent current object
+
+// CONSTRUCTOR- for some default values i.e,, 
+        // every time you create obj it calls constructor
+
     }
 
+}
+
+class Human
+{
+    private int age = 19;
+    private String name = "Pratham";
+    // sharing will be done by methods instead of direct access;
+
+    // Constructor-
+    public Human()      //default constructor -same name as class
+    {
+        // System.out.println("IN CONSTRUCTOR");
+        age = 21;
+        name = "Prathu";
+    }
+
+    public Human(int age, String name)    //Parameterized Constructor
+    {
+        // age = a;
+        this.age = age;
+        // name = n;
+        this.name = name;
+    }
+
+    // Methods
+    public int getAge(){
+        return age;
+    }
+    public void setAge(int age){
+        // age = a;
+        this.age = age;
+    }
+
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        // name = n;
+        this.name = name;
+    }
 }

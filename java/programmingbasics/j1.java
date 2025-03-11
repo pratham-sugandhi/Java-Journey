@@ -14,6 +14,7 @@ public class j1
 
 
 // DATA TYPES-
+
         // int num = 3;
         // byte by = 127;
         // short sh = 453;
@@ -50,6 +51,7 @@ public class j1
 // ARITHMETIC OPERATION
         // int num1 = 78;
         // int num2 = 433;
+
         // int res = num1 + num2;
         // int res = num1 - num2;
         // int res = num1 * num2;
@@ -83,14 +85,14 @@ public class j1
         // int b = 9;
 
         // boolean res = x>y || a<b;
+        // boolean res = x<y && a<b;
 
         // System.out.println(!res);
 
 
 // CODITIONAL STATEMENT
         // IF ELSE-
-
-        // int x = 12;
+        // int x = 12; 
         // if(x > 10 && x <= 20)
         //      System.out.println("hlooo");
         // else
@@ -127,6 +129,7 @@ public class j1
 
 
 // SWITCH STATEMENT
+
         // int n = 6;
 
         // switch(n){
@@ -160,7 +163,7 @@ public class j1
         // String res = "";
 
         // switch(day)
-        //      {
+        //     {
         //         case "Saturday", "Sunday" -> res = "6 am";
         //         case "Monday" -> res = "8 am";
         //         default -> res = "7 am";
@@ -169,7 +172,7 @@ public class j1
       
 
 // LOOPS- 
-        // WHILE LOOP
+    // WHILE LOOP
         // int i = 1;
         // while(i<=5)
         // {
@@ -184,7 +187,9 @@ public class j1
         // }
         // System.out.println("byee "+ i);
 
-        // DO WHILE
+
+
+    // DO WHILE
         // int j = 5;
         // do
         // {
@@ -192,7 +197,9 @@ public class j1
         //      j++;
         // } while (j<=4);
 
-        // FOR LOOP
+
+
+    // FOR LOOP
         // for(int i=1; i<=4; i++)
         // {
         //         System.out.println("Hiii " +i);
@@ -233,6 +240,7 @@ public class j1
         // }
         
         
+
     }
 }
 
