@@ -121,6 +121,7 @@ public class j1
 
 
         //TERNARY OPERATOR
+        // (codn) ? true : false;
 
         // int n = 5;
         // int res = 0;
@@ -216,8 +217,8 @@ public class j1
         // Class - blueprint for obj
         // Class -> JVM -> Obj
 
-        int num1 = 4;           //primitive var
-        int num2 = 7;
+        // int num1 = 4;           //primitive var
+        // int num2 = 7;
 
         // Calculator calc = new Calculator();                //reference var -> Object
         // int res = calc.add(num1 , num2);
