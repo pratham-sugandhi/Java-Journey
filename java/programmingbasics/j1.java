@@ -212,10 +212,10 @@ public class j1
 
 
 // OBJECTS- everything need obj 
-        // to add two numbers i need obj //OOP
-        // Object - Properties(knows) & Behaviours(does)
-        // Class - blueprint for obj
-        // Class -> JVM -> Obj
+//         to add two numbers i need obj //OOP
+//         Object - Properties(knows) & Behaviours(does)
+//         Class - blueprint for obj
+//         Class -> JVM -> Obj
 
         // int num1 = 4;           //primitive var
         // int num2 = 7;
@@ -246,25 +246,25 @@ public class j1
 }
 
 // class Calculator        //designing
-{
-        int a;          //instantaneous variable- heap memo 
+// {
+//         int a;          //instantaneous variable- heap memo 
 
-        public int add(int n1, int n2)        //method
-        {
-                int r = n1 + n2;
-                return r;
-        }
+//         public int add(int n1, int n2)        //method
+//         {
+//                 int r = n1 + n2;
+//                 return r;
+//         }
 
-        public int add(int n1, int n2, int n3)        //method
-        {
-                return n1 + n2 + n3;
-        }
+//         public int add(int n1, int n2, int n3)        //method
+//         {
+//                 return n1 + n2 + n3;
+//         }
 
-        public double add(double n1, int n2, int n3)        //method
-        {
-                return n1 + n2 + n3;
-        }
-}
+//         public double add(double n1, int n2, int n3)        //method
+//         {
+//                 return n1 + n2 + n3;
+//         }
+// }
 
 // class Computer
 // {

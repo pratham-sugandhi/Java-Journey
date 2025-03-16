@@ -133,6 +133,100 @@ public class P
         //     System.out.println("sug");
         // } 
 
-// 
+// OBJECTS-
+        // int num1 = 3;
+        // int num2 = 5;
+
+        // Calculator calc = new Calculator();
+        // int res = calc.add(num1 , num2);
+        // System.out.println(res);
+
+        // Calculator obj1 = new Calculator();
+        // int ress = calc.multi(num1 , num2);
+        // System.out.println(ress);
+
+        // A obj1 = new A();
+        // int res = obj1.loop(1);
+        // System.out.println(res);
+
+        // Stringg obj = new Stringg();
+        // String res = obj.name("Pratham ", "Sugandhi");
+        // System.out.println(res);
+
+// ARRAYS-
+        // int nums[] = {1,2,3,0,4,4,4};
+        // int sums[] = {3,34,4,23,23,32};
+
+        // System.out.println(nums[2]+sums[5]);
+
+        // Student obj1 = new Student();
+        // obj1.name = "prathu";
+        // obj1.age = 19;
+        // obj1.marks = 90;
+
+        // Student obj2 = new Student();         
+        // obj2.name = "laxuu";
+        // obj2.age = 19;
+        // obj2.marks = 99;
+
+        // Student stdArr[] = new Student[2];
+        // stdArr[0] = obj1;
+        // stdArr[1] = obj2;
+
+        // for(int i=0; i<stdArr.length; i++){
+        //     System.out.println(stdArr[i].name + " : " + stdArr[i].marks);
+        // }
+
+        
+
+//
     }
 }
+
+
+class Student
+{
+    int age;
+    String name;
+    int marks;
+}
+
+// class Calculator
+// {
+//     public int add(int n1, int n2){
+//         int r = n1 + n2;
+//         return r;
+//     } 
+//     public int multi(int n1, int n2){
+//         int r = n1*n2;
+//         return r;
+//     }
+// }
+
+// class A 
+// {
+//     public void show(){
+//         System.out.println("IN Showw");
+//     }
+
+//     public int loop(int i){
+//         for(i=1; i<=3; i++){
+//             // void show(); -- not possible
+//             int j = 1;
+//             while(j<=3){
+//                 System.out.println("IN J");
+//                 j++;
+//             }
+//             System.out.println("IN I");
+//         }
+//         return i;
+//     }
+// }
+
+// class Stringg
+// {
+//     public String name(String n1, String n2){
+//         String fn = n1 + n2;
+//         return fn;
+//     }
+// }

@@ -6,8 +6,8 @@ class Student
     int marks;
 }
 
-class Mobile
-{
+// class Mobile
+// {
     String brand;
     int price;
     static String name;
@@ -34,44 +34,26 @@ class Mobile
     {
         // System.out.println(obj.brand + " : " + obj.price  + " : " + obj.name):
     }
-}
+// }
 
-class A
-{
-    public void show()
-    {
-        System.out.println("In a show");
-    }
-}
-
-
-
-
-// import java.util.Scanner;
+// class A
+// {
+//     public void show()
+//     {
+//         System.out.println("In a show");
+//     }
+// }
 
 public class j2
 {
     public static void main(String args[])
     {
-
-        A obj = new A();
-        obj.show();
-
-        // Scanner sc = new Scanner(System.in);
-
-        // int radius;
-        // radius = sc.nextInt();
-        // double pi = 3.1415;
-        // double area = pi * radius * radius;
-        // // Systebsbkfbm.out.println(area);
-
-
 // ARRAY -2
-        // int nums[] = new int[4];
-        // nums[0] = 4;
-        // nums[1] = 3;
-        // nums[2] = 9;
-        // nums[3] = 7;
+        int nums[] = new int[4];
+        nums[0] = 4;
+        nums[1] = 3;
+        nums[2] = 9;
+        nums[3] = 7;
 
         // for(Student stud : students)
         // {
@@ -100,7 +82,7 @@ public class j2
 
         // for(int i=0; i<students.length; i++)
         // {
-            // System.out.println(students[i].name + " : " + students[i].marks);
+        //     System.out.println(students[i].name + " : " + students[i].marks);
         // }
 
 // ARRAYS-
@@ -158,11 +140,11 @@ public class j2
 // STRINGS- //immutable
 
         // String name = new String("navin");
-        String name = "naveen";
-        name = name + "reddy";     //new object 
+        // String name = "naveen";
+        // name = name + "reddy";     //new object 
 
-        String s1 = "navin";
-        String s2 = "navin";    //refrence
+        // String s1 = "navin";
+        // String s2 = "navin";    //refrence
 
         // System.out.println("hello " + name);
         // System.out.println(name.charAt(3));
@@ -170,11 +152,11 @@ public class j2
 
 // TYPES - mutable & immutable
         //String Buffer-thread safe
-        StringBuffer sb = new StringBuffer("naveen");
-        sb.append(" reddy");
-        sb.deleteCharAt(2);
-        sb.insert(6, "java");
-        sb.setLength(30);
+        // StringBuffer sb = new StringBuffer("naveen");
+        // sb.append(" reddy");
+        // sb.deleteCharAt(2);
+        // sb.insert(6, "java");
+        // sb.setLength(30);
 
         // System.out.println(sb);
         // System.out.println(sb.capacty());
