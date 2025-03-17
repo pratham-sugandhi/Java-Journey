@@ -1,27 +1,34 @@
 
-enum Status{
-    Running, Failed, Pending, Success;
-}
+// enum Status{
+//     Running, Failed, Pending, Success;
+// }
 
-enum Laptop{
-    Macbook(200), XPS(100), Surface;
+// enum Laptop{
+//     Macbook(200), XPS(100), Surface;
 
-    private int price;
+//     private int price;
 
-    private Laptop( ){
-        price = 500;
-    }
+//     private Laptop( ){
+//         price = 500;
+//     }
 
-    private Laptop(int price){
-        this.price = price;
-    }
+//     private Laptop(int price){
+//         this.price = price;
+//     }
 
-    public int getPrice(){
-        return price;
-    }
+//     public int getPrice(){
+//         return price;
+//     }
 
-    public void setPrice(){
-        this.price = price;
+//     public void setPrice(){
+//         this.price = price;
+//     }
+// }
+
+class NavinException extends Exception
+{
+    public NavinException(String String){
+        super(String);
     }
 }
 
@@ -103,7 +110,78 @@ public class j4
     // NORMAL
     // FUNCTIONAL
     // MARKER
-// 
+// EXCEPTION HANDLING-
+    // STATEMENTS-
+    
+    // int i = 0;
+    // int j = 18/i;
+    // System.out.println(j);  //exception
+    // System.out.println("Byee");  //execution stops
+
+    //exception handling
+    // int i = 2;
+    // int j = 0;
+
+    // int nums[] = new int[5];
+    // String str = null;
+    
+    // try
+    // {
+    //     j = 18/i;   //ArithmeticException
+    //     System.out.println(str.length()); 
+
+    //     System.out.println(nums[1]); 
+    //     System.out.println(nums[5]); //Index 5 out of bounds for length 5
+    // }
+    // catch(ArithmeticException e)  //during exception only
+    // {
+    //     System.out.println("Cannot divide by 0.."+ e);
+    // }
+    // catch(ArrayIndexOutOfBoundsException e)  //during exception only
+    // {
+    //     System.out.println("Stays in index limits.."+ e);
+    // }
+    // catch(Exception e)  //during exception only
+    // {
+    //     System.out.println("Something went wrong.."+ e);
+    // }
+
+    // System.out.println(j);      //execution don't stop
+    // System.out.println("Byee");     
+
+// EXCEPTION HEIRARCHY-
+    // OBJECT -> THROWABLE -> 
+                // EXCEPTION ->
+                        //RUNTIME EXCEPTION (UNCHECKED)- ARITHMETIC, ARRAYINDEX, NULLPOINT
+                        // SQLEXCEPTION, IOEXCEPTION (CHECKED)
+                // ERROR ->
+                        //THREADDEATH
+                        //IOERROR
+                        //VIRTUALMACHINE ERROR -> OUT OF MEMORY
+
+// EXCEPTION THROW-
+    // int i = 20;
+    // int j = 0;
+
+    // try
+    // {
+    //     j = 18/i; 
+    //     if(j == 0)
+    //         throw new NavinException("navinn");
+    //         // throw new ArithmeticException("cant take zero");
+    // }
+    // catch(NavinException e)  //during exception only
+    // {
+    //     j = 18/1;
+    //     System.out.println("Default value.."+ e);
+    // }
+    // catch(Exception e)  //during exception only
+    // {
+    //     System.out.println("Something went wrong.."+ e);
+    // }
+
+    // System.out.println(j);      //execution don't stop
+    // System.out.println("Byee");      
     }
 }
 
