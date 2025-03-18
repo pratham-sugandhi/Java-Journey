@@ -49,11 +49,11 @@ public class j2
     public static void main(String args[])
     {
 // ARRAY -2
-        int nums[] = new int[4];
-        nums[0] = 4;
-        nums[1] = 3;
-        nums[2] = 9;
-        nums[3] = 7;
+        // int nums[] = new int[4];
+        // nums[0] = 4;
+        // nums[1] = 3;
+        // nums[2] = 9;
+        // nums[3] = 7;
 
         // for(Student stud : students)
         // {

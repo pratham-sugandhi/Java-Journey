@@ -25,12 +25,23 @@
 //     }
 // }
 
-class NavinException extends Exception
-{
-    public NavinException(String String){
-        super(String);
-    }
-}
+// class NavinException extends Exception
+// {
+//     public NavinException(String String){
+//         super(String);
+//     }
+// }
+
+// class A
+// {
+//     public void show() throws ClassNotFoundException
+//     {
+//         Class.forName("Demo");
+//     }
+// }
+
+// import java.io.IOExceotion;
+// import java.io.InputExceotion;
 
 public class j4
 {
@@ -181,7 +192,80 @@ public class j4
     // }
 
     // System.out.println(j);      //execution don't stop
-    // System.out.println("Byee");      
+    // System.out.println("Byee");    
+
+// EXCEPTION THROWS-
+        
+        // A obj = new A();
+        // try{
+        //     obj.show();
+        // }
+        // catch(ClassNotFoundException e){
+        //     System.out.println("Not able to find class");
+        //     e.printStackTrack();
+        // }
+        
+// INPUT IN JAVA
+    // println belongs to PrintStream class
+    // out (obj) is static inside system class
+
+    // System.out.println("Enter number");
+    // int num = System.in.read();  //suitable for only one digit
+    // System.out.println(num - 48);
+
+    // InputStreamReader in = new InputStreamReader(System.in);
+    // BufferReader bf = new BufferReader(in);
+
+    // int num = Integer.parseInt(bf.readLine());
+    // System.out.println(num);
+
+    // bf.close();
+
+    // Scanner sc = new Scanner(System.in);
+
+    // int num = sc.nextInt();
+    // System.out.println(num);
+
+// FINALLY KEYWORD-
+    // int i = 0;
+    // int j = 0;
+
+    // try
+    // {
+    //     j = 18/i; 
+    //     System.out.println("Printt..");     //will not print during exception
+    // }
+    // catch(Exception e)  //during exception only
+    // {
+    //     System.out.println("Something went wrong.."+ e);
+    // }
+    // finally
+    // {
+    //     System.out.println("Byee");     // print compulsiorily
+    // }
+
+    // int num = 0;
+    // try{
+    //     InputStreamReader in = new InputStreamReader(System.in);
+    //     BufferReader bf = new BufferReader(in);
+    //     int num = Integer.parseInt(bf.readLine());
+    //     System.out.println(num);
+    // }
+    // finally
+    // {
+    //     System.out.println(num);
+    //     br.close();
+    // }
+
+
+    // try(BufferReader br = new BufferReader(new InputStreamReader(System.in)))
+    // {
+    //     num = Integer.parseInt(br.readline());
+    //     System.out.println(num);
+    // }
+
+//
+
     }
 }
 

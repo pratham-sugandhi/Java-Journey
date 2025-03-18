@@ -159,19 +159,34 @@ public class P
 
         // System.out.println(nums[2]+sums[5]);
 
+        // Student std = new Student();
+        // std.age = 21;
+        // std.name = "fatuu";
+        // std.marks = 89;
+
         // Student obj1 = new Student();
         // obj1.name = "prathu";
         // obj1.age = 19;
         // obj1.marks = 90;
 
         // Student obj2 = new Student();         
-        // obj2.name = "laxuu";
+        // obj2.name = "fatuu";
         // obj2.age = 19;
-        // obj2.marks = 99;
+        // obj2.marks = 69;
+
+        // Student mixArr[] = new Student[3];
+        // mixArr[0] = std;
+        // mixArr[1] = obj1;
+        // mixArr[2] = obj2;
+
+        // for (int i=0; i<mixArr.length; i++){
+        //     System.out.println(mixArr[i].name + " : " + mixArr[i].marks);
+        // }
 
         // Student stdArr[] = new Student[2];
         // stdArr[0] = obj1;
         // stdArr[1] = obj2;
+
 
         // for(int i=0; i<stdArr.length; i++){
         //     System.out.println(stdArr[i].name + " : " + stdArr[i].marks);
@@ -179,6 +194,9 @@ public class P
 
         
 
+// ARRAYS2-
+    int nums[][] = new int [3][4];
+    
 //
     }
 }
