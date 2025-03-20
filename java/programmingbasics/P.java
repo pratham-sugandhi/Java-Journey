@@ -195,8 +195,32 @@ public class P
         
 
 // ARRAYS2-
-    int nums[][] = new int [3][4];
+    // int nums[][] = new int [3][4];
+
+    // for (int i=0; i<3; i++){
+    //     System.out.println(i);
+    //     for(int j=0; j<4; j++){
+    //         // nums[i][j] = i+j;
+    //         nums[i][j] = (int)(Math.random() * 10);
+    //         System.out.print(nums[i][j] + " : ");
+    //     }
+    //     System.out.println(i+" i");
+    // };
     
+    // for(int i=0; i<3; i++){
+    //     for(int j=0; j<4; j++){
+    //         nums[i][j] = (int)(Math.random() * 10);
+    //         System.out.print(nums[i][j] + ":");
+    //     }
+    //     System.out.println("::" + i +" i");
+    // };
+
+    // for(int n[] : nums){
+    //     for(int m[] : n){
+    //         nums[i][j] = (int)(Math.random() * 10);
+    //         System.out.print(nums[i][j] + ":");
+    //     }
+    // };
 //
     }
 }

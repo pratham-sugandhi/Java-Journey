@@ -7,33 +7,33 @@ class Student
 }
 
 // class Mobile
-// {
-    String brand;
-    int price;
-    static String name;
+//  {
+//     String brand;
+//     int price;
+//     static String name;
 
-    static
-    {    
-        name = "Phone";
-        System.out.println("in static block");
-    }
+//     static
+//     {    
+//         name = "Phone";
+//         System.out.println("in static block");
+//     }
 
-    public Mobile()
-    {
-        brand = "";
-        price = 10000;
-        System.out.println("in constuctor block");
-    }
+//     public Mobile()
+//     {
+//         brand = "";
+//         price = 10000;
+//         System.out.println("in constuctor block");
+//     }
 
-    public void show()
-    {
-        System.out.println(brand + " : " + price  + " : " + name);
-    }
+//     public void show()
+//     {
+//         System.out.println(brand + " : " + price  + " : " + name);
+//     }
 
-    public static void show1(Mobile obj)
-    {
-        // System.out.println(obj.brand + " : " + obj.price  + " : " + obj.name):
-    }
+//     public static void show1(Mobile obj)
+//     {
+//         // System.out.println(obj.brand + " : " + obj.price  + " : " + obj.name):
+//     }
 // }
 
 // class A
@@ -86,33 +86,34 @@ public class j2
         // }
 
 // ARRAYS-
-        // int nums[][] = new int [3][4];
+        int nums[][] = new int [3][4];
 
         // for(int i=0; i<3; i++)
         // {
         //     for(int j=0; j<4; j++)
         //     {
         //         nums[i][j] = (int)(Math.random() * 10);
-        //         // System.out.println(nums[i][j]);
+        //         System.out.println(nums[i][j]);
         //     }
-        // }
+        // };
 
         // for(int i=0; i<3; i++)
         // {
         //     for(int j=0; j<4; j++)
         //     {
-        //         // System.out.print(nums[i][j] + " ");
+        //         nums[i][j] = (int)(Math.random() * 10);
+        //         System.out.print(nums[i][j] + ":");
         //     }
-        //     // System.out.println();
-        // }
+        //     System.out.println(i);
+        // };
 
         // for(int n[] : nums)
         // {
         //     for(int m : n)
         //     {
-        //         // System.out.print(m + " ");
+        //         System.out.print(m + " ");
         //     }
-        //     // System.out.println();
+        //     System.out.println();
         // }
 
         // int nums[][] = new int [3][];

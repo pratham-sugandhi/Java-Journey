@@ -1,4 +1,12 @@
+// import java.util.ArrayList;
+// import java.util.Collection;
 
+// import java.util.HashSet;
+// import java.util.Set;
+
+// import java.util.Map;
+
+// import javax.xml.transform.Source;
 
 public class j5{
     public static void main(String a[]) throws InterruptedException {
@@ -120,7 +128,7 @@ public class j5{
         // System.out.println(c.count);
 
 
-//  THREAD STATES-
+// THREAD STATES-
     // NEW -> (start()) -> 
                     // RUNNABLE -> (run()) -> 
                                     // RUNNING -> (sleep(), wait()) -> 
@@ -128,9 +136,128 @@ public class j5{
     // RUNNING -> (stop()) -> DEAD
     // RUNNABLE -> (stop()) -> DEAD
 
-// 
+// COLLECTION-
+    // ARRAYLIST- can have same index value , in seq
+
+        // Collection<Integer> nums = new ArrayList<Integer>();
+        // List<Integer> nums = new ArrayList<Integer>();      //to work with index
+
+        // nums.add(6);
+        // nums.add(8);
+        // nums.add(5);
+        // nums.add(8);
+        // nums.add(2);
+
+        // System.out.println(nums.get(3));
+
+        // for(int n : nums){
+        //     System.out.println(n);
+        // }
+        
+    // SET- no same index value , unsorted value
+
+        // Set<Integer> nums = new HashSet<Integer>();      //to work with index
+        // Set<Integer> nums = new TreeSet<Integer>();      //sorted values
+        // Collection<Integer> nums = new TreeSet<Integer>(); 
+
+        // nums.add(6);
+        // nums.add(8);
+        // nums.add(5);
+        // nums.add(8);
+        // nums.add(2);
+
+        // Iterator<Integer> values = nums.iterator();
+        
+        // while(values.hasNext())
+        //     System.out.println(values.next());
+
+        // for(int n : nums){
+        //     System.out.println(n);
+    
+    // MAP- collection of key and value pair
+        // key(set) name of index value(list)
+
+            // Map<String, Integer> students  = new HashMap<>();   //unsynchronised
+            // Map<String, Integer> students  = new Hashtable<>(); //synchronised
+
+            // students.put("Navin", 89);
+            // students.put("prathu", 99);
+            // students.put("Navin", 95);
+            // students.put("harsh", 83);
+
+            // System.out.println(students);
+            // System.out.println(students.get("prathu"));
+            // System.out.println(students.keySet());
+
+            // for(String key : students.keySet()){
+            //     System.out.println(key + " : " + students.get(key));
+            // }
+
+// COMPARATOR VS COMPARABLE-
+    // Comparator- own logic for sorting
+
+        Comparator<Integer> com = new Comparator<Integer>()
+        {
+            public int compare(Integer i, Integer j){
+                if(i%10 > j%10)
+                    return 1;   //swap
+                else
+                    return -1;
+            }
+        };
+
+        List<Integer> nums = new ArrayList<>();
+        nums.add(43);
+        nums.add(28);
+        nums.add(76);
+        nums.add(50);
+
+        Collection.sort(nums);
+        Collection.sort(nums, com);
+
+        System.out.println(nums);
+
+
+        Comparator<Student> com2 = new Comparator<Student>()
+        {
+            public int compare(Student i, Student j){
+                if(i.age > j.age)
+                    return 1;   //swap
+                else
+                    return -1;
+            }
+        };
+
+        List<Student> studs = new ArrayList<>();
+        studs.add(new Student(19, "prathu"));
+        studs.add(new Student(21, "rathu"));
+        studs.add(new Student(17, "brathu"));
+        studs.add(new Student(19, "sathu"));
+        
+        Collection.sort(studs, com2);
+
+        for(Student s : studs)
+            System.out.println(s);
+
+    // Comparable- power to compare itself
+//
     }
 }
+
+// class Student{
+//     int age;
+//     String name;
+
+//     public Student(int age, String name){
+//         this.age = age;
+//         this.name = name;
+//     }
+    
+//     public String toString(){
+//         return "Std [age=" + age +", name="+ name + "]"
+//     }
+// }
+
 
 // class Counter
 // {
