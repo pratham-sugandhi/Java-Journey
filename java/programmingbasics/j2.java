@@ -1,16 +1,16 @@
 
-class Student
-{
-    int rollno;
-    String name;
-    int marks;
-}
+// class Student
+// {
+//     int rollno;
+//     String name;
+//     int marks;
+// }
 
 // class Mobile
-//  {
+// {
 //     String brand;
 //     int price;
-//     static String name;
+//     static String name;     //call by its classname
 
 //     static
 //     {    
@@ -30,19 +30,18 @@ class Student
 //         System.out.println(brand + " : " + price  + " : " + name);
 //     }
 
+//     public static void show1()
+//     {
+//         System.out.println("in static method ");
+//         System.out.println(name);   //take static mmethod
+//     };
+
 //     public static void show1(Mobile obj)
 //     {
-//         // System.out.println(obj.brand + " : " + obj.price  + " : " + obj.name):
+//         System.out.println(obj.brand + " : " + obj.price  + " : " + obj.name):
 //     }
 // }
 
-// class A
-// {
-//     public void show()
-//     {
-//         System.out.println("In a show");
-//     }
-// }
 
 public class j2
 {
@@ -138,7 +137,7 @@ public class j2
         //     System.out.println();
         // }
     
-// STRINGS- //immutable
+// STRINGS- //immutable- can not change
 
         // String name = new String("navin");
         // String name = "naveen";
@@ -151,43 +150,68 @@ public class j2
         // System.out.println(name.charAt(3));
         // System.out.println(name.cpncat(" reddy"));
 
-// TYPES - mutable & immutable
-        //String Buffer-thread safe
+    // TYPES -> mutable- can change  
+    //String Buffer- mutable string & thread safe
+        //free buffer size of 16byte
+
         // StringBuffer sb = new StringBuffer("naveen");
-        // sb.append(" reddy");
+        // sb.append(" reddy");     //- changing obj inside heap
         // sb.deleteCharAt(2);
         // sb.insert(6, "java");
         // sb.setLength(30);
+
+        // String str = sb.toString();
+        // System.out.println(str);
 
         // System.out.println(sb);
         // System.out.println(sb.capacty());
         // System.out.println(sb.length());
 
 // Static- can be called with thier class name directly without object
-// Non static need classes object to be called
-
     // Mobile obj1 = new Mobile();
-
     // obj1.brand = "Apple";
     // obj1.price = 10000;
-    // Mobile.name = "Phone";
+
+    // Mobile.name = "Phone";   //static
+
+// Non static- need classes object to be called
+
+    // Mobile obj1 = new Mobile();
+    // obj1.brand = "Apple";
+    // obj1.price = 10000;
+    // Mobile.name = "Phone";   
     
-    // obj1.show();
-    // Mobile.show1(obj1);
-
     // Mobile obj3 = new Mobile();
-
     // obj3.brand = "VIVO";
     // obj3.price = 10000;
     // Mobile.name = "SmartPhone";
+
+
+    // Mobile.name="mobilePhone"; //static var //same in all obj
     
+    // obj1.show();
     // obj3.show();
 
+    // Mobile.show1();      //static method
+    // Mobile.show1(obj1);
+    // Mobile.show1(obj3);
 
+    // Mobile obj1 = new Mobile(); -> called static when loaded, called constructor when obj created
+    // Mobile obj3 = new Mobile(); -> will only call constructor block
+    
     // Class.forName("Mobile"); //will call static block
 
 
 // ENCAPSULATION- 
+    // Private - can access with methods
+    // methods - get and set
+
+    // Human obj = new Human();
+    // obj.setAge(19);
+    // obj.setName("prathu");
+
+    // System.out.println(obj.getName() + " : " + obj.getAge());
+
     // GETTERS AND SETTERS-
 
         // Human obj = new Human();
@@ -204,49 +228,73 @@ public class j2
 
     // THIS KEYWORD- used to represent current object
 
-// CONSTRUCTOR- for some default values i.e,, 
+// CONSTRUCTOR- used to set default values i.e,, 
         // every time you create obj it calls constructor
+        // constructor name should be class name
+// ANONYMOUS OBJ-
 
+    // int marks;
+    // marks = 99;
+
+    // A obj;
+    // obj = new A();
+
+    // new A();    //obj creation- anonymous
+    // new A().show();     //can't write again
+
+//
     }
 
 }
 
-class Human
-{
-    private int age = 19;
-    private String name = "Pratham";
-    // sharing will be done by methods instead of direct access;
 
-    // Constructor-
-    public Human()      //default constructor -same name as class
-    {
-        // System.out.println("IN CONSTRUCTOR");
-        age = 21;
-        name = "Prathu";
-    }
+// class A
+// {
+//     public A(){
+//         System.out.println("obj created"); 
+//     }  
+//     public void show()
+//     {
+//         System.out.println("In a show");
+//     }
+// }
 
-    public Human(int age, String name)    //Parameterized Constructor
-    {
-        // age = a;
-        this.age = age;
-        // name = n;
-        this.name = name;
-    }
+// class Human
+// {
+//     private int age = 19;
+//     private String name = "Pratham";
+//     // sharing will be done by methods instead of direct access;
 
-    // Methods
-    public int getAge(){
-        return age;
-    }
-    public void setAge(int age){
-        // age = a;
-        this.age = age;
-    }
+//     // Constructor-
+//     public Human()      //default constructor -same name as class
+//     {
+//         // System.out.println("IN CONSTRUCTOR");
+//         age = 21;
+//         name = "Prathu";
+//     }
 
-    public String getName(){
-        return name;
-    }
-    public void setName(String name){
-        // name = n;
-        this.name = name;
-    }
-}
+//     public Human(int age, String name)    //Parameterized Constructor
+//     {
+//         // age = a;
+//         this.age = age;
+//         // name = n;
+//         this.name = name;
+//     }
+
+//     // Methods
+//     public int getAge(){
+//         return age;
+//     }
+//     public void setAge(int age){
+//         // age = a;
+//         this.age = age;
+//     }
+
+//     public String getName(){
+//         return name;
+//     }
+//     public void setName(String name){
+//         // name = n;
+//         this.name = name;
+//     }
+// }

@@ -87,7 +87,7 @@ public class j3
     public static void main(String args[])
     {
 // INHERITANCE-
-    // Single And Multilevel
+    // Single And Multilevel(doesn't)
     // java doesn't supports multiple inheritence 
         // reason - Ambiguity(selection)
 
