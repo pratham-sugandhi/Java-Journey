@@ -11,7 +11,30 @@ public class practice
         // int n = sc.nextInt();
         // System.out.println(n*n);
 
+        //user input a,b : a>b, remainder when a/b =>
+        // Scanner sc = new Scanner(System.in);
+        // System.out.println("Enter dividend: ");
+        // int a = 14; //sc.nextInt();
+        // System.out.println("Enter divisor: ");
+        // int b = 8; //sc.nextInt();
 
+        // int q = a/b;
+        // Divisor * quotient + remainder = dividend
+
+        // int remainder = a - (b*q);
+        // int r = a%b;
+
+        // System.out.println("a:"+a+" remainder:"+remainder);
+
+
+        //ASCII
+        // char ch = 'a';
+        // System.out.println(ch);
+
+        // int a = (int)ch;
+        // System.out.println(a);
+
+    // IF ELSE-
         // int n =  5;
         // if( n%2 == 0)
         //     System.out.println("Even : "+n);
@@ -65,16 +88,40 @@ public class practice
         // }
 
 
-        int n = 15;
-        if(n%5 == 0 || n%3 == 0)
-        {
-            if(n%15 != 0){
-                System.out.println(n);
-            }
-        }
-        else 
-        {
-            System.out.println("fail : "+n);
-        }
+        // int n = 15;
+        // if(n%5 == 0 || n%3 == 0)
+        // {
+        //     if(n%15 != 0){
+        //         System.out.println(n);
+        //     }
+        // }
+        // else 
+        // {
+        //     System.out.println("fail : "+n);
+        // }
+
+        // int a = 5;
+        // int b = 3;  
+        // int c = 9;
+
+        // int greater = (a>b) ? (a>c ? a : c) : (b>c ? b : c);
+        // System.out.println(greater);   
+
+        // int a = 5;
+        // int b = 3;  
+        // int c = 9;
+
+        // if(a+b>c){
+        //     System.out.println("possible");
+        // }
+        // else if(b+c>a)
+        //     System.out.println("possible");
+        // else if(a+c>b)
+        //     System.out.println("possible");
+        // else
+        //     System.out.println("not possible");
+
+
+    //
     }
 }
