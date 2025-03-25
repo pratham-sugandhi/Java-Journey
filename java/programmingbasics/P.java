@@ -194,7 +194,7 @@ public class P
 
         
 
-// ARRAYS2-
+// ARRAYS2- 
     // int nums[][] = new int [3][4];
 
     // for (int i=0; i<3; i++){
