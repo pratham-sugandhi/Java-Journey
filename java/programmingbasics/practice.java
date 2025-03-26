@@ -152,12 +152,23 @@ public class practice
         //      System.out.println("surface");
 
     // LOOPS-
+        // divisible by 3
         // for(int i=1; i<=50; i++){
         //     if(i%3 == 0)
         //         System.out.println(i);
         // }
 
-        // for(int i=1; i<=100; i++){
+        //odd number
+        // for(int i=1; i<=10; i++){
+        //     if(i%2==0) continue;
+        //     System.out.println(i);
+        // }
+        // for(int i=1; i<=20; i+=2){
+        //     System.out.println(i);
+        // }
+
+        // even number
+        // for(int i=1; i<=10; i++){
         //     if(i%2==1) continue;
         //     System.out.println(i);
         // }
@@ -165,10 +176,6 @@ public class practice
         // for(int i=1; i<=10; i++){
         //     int n = i*19;
         //     System.out.println(n);
-        // }
-
-        // for(int i=1; i<=20; i+=2){
-        //     System.out.println(i);
         // }
 
         // for(int i=10; i>=1; i--){
@@ -237,6 +244,73 @@ public class practice
         //     System.out.println("Composite");
 
         // if i is factor of n then, n/i is also a factor
+
+        // int n = 78349;
+        // int sum = 0;
+        // while(n!=0){
+        //     int ld = n%10;
+        //     sum += ld;
+        //     n /= 10;
+        // }
+        // System.out.println(sum);
+
+        // int n = 383;
+        // int pro = 1;
+        // while(n!=0){
+        //     int ld = n%10;
+        //     pro = pro * ld;
+        //     n = n/10;
+        // }
+        // System.out.println(pro);
+
+        // int n = 702;
+        // int ld,pro = 1;
+        // while(n!=0){    //70,7
+        //     ld = n%10;      //2,0
+        //     if(ld!=0){
+        //         pro *= ld;  //2
+        //         n /= 10;    //70
+        //         }
+        //     else 
+        //         n = n/10;   //7
+        //  }
+        // System.out.println(pro);
+
+        //to print sum of even digit
+        // int n = 954;
+        // int ld, sum = 0;
+        // while(n!=0){
+        //     ld = n%10;
+        //     if(ld%2==1)
+        //         sum += ld;
+        //     n = n/10;
+        // }
+        // System.out.println(sum);
+
+        //reverse of num
+        // int n = 7483;
+        // int ld, r = 0;
+        // while(n!=0){
+        //     ld = n%10;  //3,8,4,7
+        //     // System.out.println(ld);
+        //     r = (r*10)+ld; //3847
+        //     n = n/10;
+        // }
+        // System.out.println(r);
+        // int sum = n+r;
+        // System.out.println(sum);
+
+        //factorial
+        // int r=1, n = 5;
+        // for(int i=n; i>=2; i--){
+        //     r = r*i;
+        // }
+        // System.out.println(r);
+
+        // ASCII-
+        // int(int i=65; i<=90; i++){
+        //     System.out.println(i +" " + (char)i)
+        // }
 
     // ARRAYS-
         // int[] arr = {4,2,8,9,7,};
@@ -325,8 +399,129 @@ public class practice
         // System.out.println(large);
         // System.out.println(sec);
 
+    // ARRAY TO METHODS-
+    // PATTERN PRINTING-
+        //star rec
+        // int n = 3;  //rows
+        // int m = 5;  //coloumns
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=m; j++){
+        //         System.out.print("*");
+        //     }
+        //     System.out.println();
+        // }
 
+        // int n=4;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=n; j++){
+        //         // System.out.print(i+" ");
+        //         System.out.print(j+ " ");
+        //     }
+        //     System.out.println();
+        // }
         
+        // int n=4;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=n; j++){
+        //         System.out.print((char)(j+64)+ " ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //Triangle
+        // int n = 4;
+        // for(int i=1; i<=n; i++){    //1
+        //     for(int j=1; j<=i; j++){  //1
+        //         System.out.print("*");
+        //         // System.out.print((2*j-1)+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // String m = "prathu";
+        // for(int i=1; i<=m.length(); i++){
+        //     for(int j=1; j<=i; j++){
+        //         System.out.print(m.charAt(1)+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // String m = "prathu";
+        // for(int i=1; i<=m.length(); i++){
+        //     for(int j=m.length(); j>=i; j--){
+        //         System.out.print(m.charAt(1)+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // int n=5;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=i; j++){
+        //         if(i%2==0)
+        //             System.out.print((char)(j+64)+ " ");
+        //         else 
+        //             System.out.print(j+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // int n = 4;
+        // int a = 1;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=i; j++){
+        //         System.out.print(a+" ");
+        //         a += 1;
+        //     }
+        //     System.out.println();
+        // }
+
+        // int n=4;
+        // for(int i=1; i<=n; i++){
+        //     // for(int j=1; j<=i; j++){
+        //     //     if(i%2!=0){
+        //     //         if(j%2!=0) System.out.println(1+" ");
+        //     //         else System.out.print(0+" ");
+        //     //     }
+        //     //     else{
+        //     //         if(j%2==0) System.out.println(1+" ");
+        //     //         else System.out.print(0+" ");
+        //     //     }
+        //     // }
+        //     for(int j=1; j<=i; j++){
+        //         if((i+j)%2 == 0)
+        //             System.out.print(1+" ");
+        //         else 
+        //             System.out.print(0+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // int n=5;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=n; j++){
+        //         if(i==(n/2+1) || j==(n/2+1)){
+        //             System.out.print("*"+" ");
+        //         }
+        //         else    
+        //             System.out.print(" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // int n=5;
+        // int m=4;
+        // for(int i=1; i<=m; i++){
+        //     for(int j=1; j<=n; j++){
+        //         if(i==1 || i==m || j==1 || j==n)
+        //             System.out.print("*");
+        //         else 
+        //             System.out.print(" ");
+        //     }
+        //     System.out.println();
+        // }
+
+    
 
     }
 }
+
