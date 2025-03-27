@@ -428,7 +428,7 @@ public class practice
         //     System.out.println();
         // }
 
-        //Triangle
+        // Triangle
         // int n = 4;
         // for(int i=1; i<=n; i++){    //1
         //     for(int j=1; j<=i; j++){  //1
@@ -503,14 +503,14 @@ public class practice
         //             System.out.print("*"+" ");
         //         }
         //         else    
-        //             System.out.print(" ");
+        //             System.out.print(" "+" ");
         //     }
         //     System.out.println();
         // }
 
         // int n=5;
         // int m=4;
-        // for(int i=1; i<=m; i++){
+        // for(int i=1; i<=m; i++){    //1
         //     for(int j=1; j<=n; j++){
         //         if(i==1 || i==m || j==1 || j==n)
         //             System.out.print("*");
@@ -520,8 +520,217 @@ public class practice
         //     System.out.println();
         // }
 
+        // int m=3;
+        // int n=4;
+        // for(int i=1; i<=m; i++){    //1,2
+        //     for(int j=1; j<=n; j++){  //2
+        //         if(i==1 || i==m || j==1 || j==n)    
+        //             System.out.print("3"+" ");
+        //         else 
+        //             System.out.print("2"+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // X
+        // int m=5;
+        // int n=6;
+        // for(int i=1; i<=m; i++){    //1
+        //     for(int j=1; j<=n; j++){    //1,2,3,4,5
+        //         if(j==i || j==n-i)
+        //             System.out.print("* ");
+        //         else
+        //             System.out.print(" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // int n=4;
+        // for(int i=1; i<=n; i++){    //1
+        //     for(int j=1; j<=n; j++){ 
+        //         if((i+j)>n) 
+        //             System.out.print("* ");
+        //             System.out.print(j+" ");
+        //         else 
+        //             System.out.print(" "+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // int n=4;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=n-i; j++){
+        //         System.out.print(" "+" ");
+        //     }
+        //     for(int j=1; j<=i; j++){
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // triangle
+        // int m=5;
+        // for(int i=1; i<=m; i++){    //1
+        //     for(int j=1; j<=m; j++){ 
+        //         if(i+j<=m) 
+        //             System.out.print(" ");
+        //         else 
+        //             System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
+        // int n=6;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=n-1; j++){
+        //         if(i+j<=n)
+        //             System.out.print(" "+" ");
+        //         else 
+        //             System.out.print(" * "+" ");
+        //     }
+        //     System.out.println();
+        // }
+        // int n=6;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=n-i; j++){
+        //             System.out.print(" "+" ");
+        //         }
+        //     for(int j=1; j<=2*i-1; j++){
+        //         // System.out.print("*"+" ");
+        //         // System.out.print(j+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        // int n=5;
+        // int nsp=n-1;
+        // // int nst=1;
+        // int nst = n;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=nsp; j++){
+        //         System.out.print(" "+" ");
+        //     }
+        //     for(int j=1; j<=nst; j++){
+        //         System.out.print("*"+" ");
+        //     }
+        //     nsp--;
+        //     // nst+=2;
+        //     // n += 1;
+        //     System.out.println();
+        // }
+
+
+        //rhombus
+        // int n=5;
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=n-i; j++){
+        //         if((i+j)<=n)
+        //         System.out.print(" "+" ");
+        //     }
+        //     for(int j=1; j<=n; j++){
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
+
+    // FUNCTIONS-
+        // System.out.println(Math.min(3,4));  //3
+        // System.out.println(Math.max(5,9));  //9
+        // System.out.println(Math.max(5,Math.max(8,6)));  //8
+        // System.out.println(Math.min(4,Math.min(7,Math.min(8,5))));  //4
+
+        // System.out.println(Math.floor(-3.56));  //-4.0
+        // System.out.println(Math.abs(-5));   //5
+        // System.out.println(Math.pow(7,9));
+        // System.out.println(Math.sqrt(3.24));    
+
+        // System.out.println("Yoo");
+        // teesra("yooo");
+        // System.out.println("done 1 baar");
+
+        // doosra();
+        // System.out.println("done 2 baar");
+        // teesra("prathu");
+
+        // int x = sum(6,4)
+        // System.out.println(x);
+
+        // C&P-
+        // int n=5;
+        // int r=4;
+        // int nfact = 1;
+        // int rfact = 1;
+
+        // for (int i=2; i<=n; i++){
+        //     nfact *= i;
+        // }
+        // for (int i=2; i<=r; i++){
+        //     rfact *= i;
+        // }
+
+        // int n_rfact = 1;
+        // for (int i=1; i<=n-r; i++){
+        //     n_rfact *= i;
+        // }
+        // int ncr = nfact/(rfact*n_rfact);
+        // int ncr = nfact/(rfact*n_rfact);
+        // System.out.println(ncr);
+
+        // int nfact =  fact(n);
+        // int rfact =  fact(r);
+        // int n_rfact = fact(n-r);
+
+        // int ncr = nfact/(rfact*n_rfact);
+        // int npr = nfact/n_rfact;
+        // System.out.println(ncr);
+        // System.out.println(npr);
+
+        //PASCAL TRI-
+        int n=5;
+        for(int i=0; i<=n; i++){
+            for(int j=0; j<=n-i; j++){
+                System.out.print(" "+" ");
+            }
+            for(int j=0; j<=i; j++){
+                int icj = fact(i)/(fact(j)*fact(i-j));
+                System.out.print(icj+"   ");
+            }
+            System.out.println();
+        }
     
 
     }
+
+    public static int fact(int x)(){
+        int xfact =1;
+        for (int i=2; i<=x; i++){
+            xfact *= i;
+        };
+        return xfact;
+    };
+
+
+    public static int sum(int a, int b){
+        System.out.println("blaa");
+        return a+b; //compulsory in int
+        //noo
+    }
+
+    public static void pehla(){
+        System.out.println("count");
+        int a = 2;
+        a += 3;
+        System.out.println(a);
+    }
+
+    public static void doosra(){
+        teesra("bhondu");
+        System.out.println("dooossraaa");
+    }
+
+    public static void teesra(String name){
+        pehla();
+        System.out.println("Mornnin"+name);
+    }
+
 }
 
