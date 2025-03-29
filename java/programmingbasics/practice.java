@@ -685,52 +685,173 @@ public class practice
         // System.out.println(npr);
 
         //PASCAL TRI-
-        int n=5;
-        for(int i=0; i<=n; i++){
-            for(int j=0; j<=n-i; j++){
-                System.out.print(" "+" ");
-            }
-            for(int j=0; j<=i; j++){
-                int icj = fact(i)/(fact(j)*fact(i-j));
-                System.out.print(icj+"   ");
-            }
-            System.out.println();
-        }
+        // int n=5;
+        // for(int i=0; i<=n; i++){
+        //     for(int j=0; j<=n-i; j++){
+        //         System.out.print(" "+" ");
+        //     }
+        //     for(int j=0; j<=i; j++){
+        //         int icj = fact(i)/(fact(j)*fact(i-j));
+        //         System.out.print(icj+"   ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //scope-
+        // i=16;
+        // System.out.println(i);
+
+        // int i=23;   //local
+        // System.out.println(i);
+
+        // fun();
+        // System.out.println(i);
+
+        //swap-
+        // int a = 5, b = 7, temp = a;
+        // a = b;
+        // b = temp;
+
+        // System.out.println(a+" "+b);
+        // a = a + b;  //12
+        // b = a - b;  //5
+        // a = a - b;  //7
+        // System.out.println(a+" "+b);
+
+        //using fun-(pass by value)
+        // int a = 5, b = 9;
+        // System.out.println(a+" "+b);    //5,9 main
+
+        // swap(a,b);  //9,5
+
+        // System.out.println(swap(a,b));  //9,5
+        // System.out.println(a+" "+b);    //5,9 priting main fun
+
+        //Array-(passed by ref)
+        // int[] arr = {34,67,15,98};
+        // System.out.println(arr[1]);
+
+        // change(arr());
+        // System.out.println(arr[1]);
+
+        // int[] a = {10};
+        // int[] b = {20};
+        // System.out.println(a[0]+" "+b[0]);
+        // swap(a,b);
+        // System.out.println(a[0]+" "+b[0]);
+
+        // int[] c = {10,30};
+        // System.out.println(c[0]+" "+c[1]);
+        // swapp(c);
+        // System.out.println(c[0]+" "+c[1]);
+
+        //two sums
+        // int[] nums = {0,4,6};
+        // int target = 10;
+        // twoSum(nums);
+
+        //two pointer
+        // int arr[] = {2,7,9,6,5,4};
+        // print(arr);
+        // int n = arr.length;
+        // int i=0, j=n-1;
+        // while(i<j){
+        //     swap(arr, i, j);
+        //     i++;
+        //     j--;
+        // }
+        // print(arr);
+    //
+    }
+
+    // public static void swap(int[] arr, int i, int j){
+    //         int temp = arr[i];
+    //         arr[i] = arr[j];
+    //         arr[j] = temp;
+    // }
+
+    // public static void print(int[] arr){
+    //     for(int i=0; i<arr.length; i++){
+    //         System.out.print(arr[i]+" ");
+    //     }
+    //     System.out.println();
+    // }
     
+    // public static void twoSum(int[] nums, int target){
+    //     int n = nums.length;
+    //     int[] ans = new int[2];
+    //     for(int i=0; i<n; i++){
+    //         for(int j=0; j<n; j++){
+    //             if(nums[i]+nums[j] == target){
+    //                 ans[0] = i;
+    //                 ans[1] = j;
+    //                 break;
+    //             }
+    //         }
+    //     }
+    // }
 
-    }
+    // public static void swapp(int[] c){
+    //     int temp = c[0];
+    //     c[0] = c[1];
+    //     c[1] = temp;
+    // }
 
-    public static int fact(int x)(){
-        int xfact =1;
-        for (int i=2; i<=x; i++){
-            xfact *= i;
-        };
-        return xfact;
-    };
+    // public static void swap(int[] a, int[] b){
+    //     int temp = a[0];
+    //     a[0] = b[0];
+    //     b[0] = temp;
+    // }
+
+    // public static void change(int[] arr0){
+    //     arr0[1] = 96;
+    // }
+
+    // public static int swap(int a, int b){
+    //     a = a + b;  
+    //     b = a - b;  
+    //     a = a - b;  
+    //     System.out.println(a+" "+b);
+    //     return 0;
+    // }
+
+    // public static int i;    //global
+
+    // public static void fun(){
+    //     i = 20;
+    // }
+
+    // public static int fact(int x)(){
+    //     int xfact =1;
+    //     for (int i=2; i<=x; i++){
+    //         xfact *= i;
+    //     };
+    //     return xfact;
+    // };
 
 
-    public static int sum(int a, int b){
-        System.out.println("blaa");
-        return a+b; //compulsory in int
-        //noo
-    }
+    // public static int sum(int a, int b){
+    //     System.out.println("blaa");
+    //     return a+b; //compulsory in int
+    //     //noo
+    // }
 
-    public static void pehla(){
-        System.out.println("count");
-        int a = 2;
-        a += 3;
-        System.out.println(a);
-    }
+    // public static void pehla(){
+    //     System.out.println("count");
+    //     int a = 2;
+    //     a += 3;
+    //     System.out.println(a);
+    // }
 
-    public static void doosra(){
-        teesra("bhondu");
-        System.out.println("dooossraaa");
-    }
+    // public static void doosra(){
+    //     teesra("bhondu");
+    //     System.out.println("dooossraaa");
+    // }
 
-    public static void teesra(String name){
-        pehla();
-        System.out.println("Mornnin"+name);
-    }
+    // public static void teesra(String name){
+    //     pehla();
+    //     System.out.println("Mornnin"+name);
+    // }
 
 }
 
