@@ -85,7 +85,7 @@ public class j2
         // }
 
 // ARRAYS-
-        int nums[][] = new int [3][4];
+        // int nums[][] = new int [3][4];
 
         // for(int i=0; i<3; i++)
         // {

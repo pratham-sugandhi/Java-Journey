@@ -221,52 +221,199 @@ public class P
     //         System.out.print(nums[i][j] + ":");
     //     }
     // };
-//
+// ARRAY- 
+        // Student s1 = new Student();
+        // s1.age = 21;
+        // s1.name = "broo";
+        // s1.marks = 89;
+
+        // Student s2 = new Student();
+        // s2.age = 22;
+        // s2.name = "siss";
+        // s2.marks = 78;
+
+        // Student[] arr = new Student[2];
+        // arr[0] = s2;
+        // arr[1] = s1;
+
+        // for(int i=0; i<arr.length; i++){
+        //     System.out.println(arr[i].name);
+        // }
+
+
+        // Car c1 = new Car();
+        // c1.model = "M018";
+
+        // Car c2 = new Car();
+        // c2.model = "P189";
+
+        // Car[][] carArr = new Car[2][4];
+        // carArr[0][] = c1;
+        // carArr[1][] = c2;
+        // carArr[][0] = c2;
+        // carArr[][1] = c1;
+        // carArr[][2] = c2;
+        // carArr[][3] = c1;
+        
+        // for(int i=0; i<carArr.length; i++){
+        //     for(int j=0; j<carArr.length; j++){
+        //         System.out.println(carArr[i][j].model); 
+        //     }
+        // }
+
+// ENCAPSULATION-
+        //GETTERS AND SETTERS-
+        // Car obj = new Car();
+        // obj.setCar("xuv500");
+
+        // System.out.println(obj.getCar());
+
+        // Calc obj1 = new Calc();
+        // obj1.setType("Advanced");
+        // obj1.setPrice(1199);
+
+        // Calc obj2 = new Calc();
+        // obj2.setType("Normal");
+        // obj2.setPrice(599);
+
+        // System.out.println(obj1.getType() +" "+ obj2.getPrice());
+
+// INHERITANCE-
+        // Calc obj = new Calc();
+        // int a1 = obj.add(6,8);
+        // int a2 = obj.multi(6,7);
+        // System.out.println(a1 + " "+ a2);
+
+// THIS AND SUPER-
+    //super- calls const of upper class
+    //this- calls const of same class
+        // Calc obj = new Calc(5);
+
+// OVERRIDING-
+        // Student obj = new Student();
+        // obj.Show();
+        // obj.loop(5);
+
+// POLYMORPHISM-
+    //parent- refrence & child-obj
+        // Calculator obj =new Calc();
+        // obj.add(6,9);
+
+        // A obj0 = new Student();
+        // obj0.show();
+
+// FINAL KEYWORD- 
+    // variable
+        // final int num = 8;
+        // num = 9;
+        // System.out.println(num);
+
+    // class- cannot inherit from final A 
+        // Student obj1 = new Student();
+        // obj1.show();    //cannot inherit from final A
+
+    // methods- methods cannot be overwrite
+        // show() in B cannot override show() in A
+        // Student obj1 = new Student();
+        // obj1.show();
+// 
     }
 }
 
+class Calc extends Calculator{
+    private String type;
+    private int price;
+    public int nums;
 
-class Student
+    public Calc(){
+        super();
+        System.out.println("IN cons..");
+        type = "normal";
+        price =  699;
+    }
+
+    public Calc(int nums){
+        int sum = nums+nums;
+        System.out.println(sum);
+    }
+
+    public String getType(){
+        return type;
+    }
+    public int getPrice(){
+        return price;
+    }
+
+    public String setType(String type){
+        this.type = type;
+        return type;
+    }
+    public int setPrice(int price){
+        this.price = price;
+        return price;
+    }
+}
+
+class Car{
+    private String model;
+
+    public String getCar(){
+        return model;
+    }
+    public String setCar(String model){
+        this.model = model;
+        return model;
+    }
+
+}
+
+class Student extends A
 {
     int age;
     String name;
     int marks;
+
+    public void Show(){
+        System.out.println("Blaa");
+    }
 }
 
-// class Calculator
-// {
-//     public int add(int n1, int n2){
-//         int r = n1 + n2;
-//         return r;
-//     } 
-//     public int multi(int n1, int n2){
-//         int r = n1*n2;
-//         return r;
-//     }
-// }
+class Calculator{
+    public Calculator(){
+        System.out.println("Calc cons..");
+    }
 
-// class A 
-// {
-//     public void show(){
-//         System.out.println("IN Showw");
-//     }
+    public int add(int n1, int n2){
+        int r = n1 + n2;
+        return r;
+    } 
+    public int multi(int n1, int n2){
+        int r = n1*n2;
+        return r;
+    }
+}
 
-//     public int loop(int i){
-//         for(i=1; i<=3; i++){
-//             // void show(); -- not possible
-//             int j = 1;
-//             while(j<=3){
-//                 System.out.println("IN J");
-//                 j++;
-//             }
-//             System.out.println("IN I");
-//         }
-//         return i;
-//     }
-// }
+final class A 
+{
+    public void show(){
+        System.out.println("IN Showw");
+    }
 
-// class Stringg
-// {
+    public int loop(int i){
+        for(i=1; i<=3; i++){
+            // void show(); -- not possible
+            int j = 1;
+            while(j<=3){
+                System.out.println("IN J");
+                j++;
+            }
+            System.out.println("IN I");
+        }
+        return i;
+    }
+}
+
+// class Stringg {
 //     public String name(String n1, String n2){
 //         String fn = n1 + n2;
 //         return fn;
