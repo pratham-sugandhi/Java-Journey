@@ -9,19 +9,19 @@
 
 // import java.util.ArrayList;
 
-class A extends Object      //General
-{
-    public A()
-    {
-        super();        //Calls constructor of the Object Class
-        System.out.println("default A");
-    }
-    public A(int a)
-    {
-        super();
-        System.out.println("IN A int");
-    }
-}
+// class A extends Object      //General
+// {
+//     public A()
+//     {
+//         super();        //Calls constructor of the Object Class
+//         System.out.println("default A");
+//     }
+//     public A(int a)
+//     {
+//         super();
+//         System.out.println("IN A int");
+//     }
+// }
 
 // class B extends A 
 // {

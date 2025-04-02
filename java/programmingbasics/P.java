@@ -1,4 +1,29 @@
+// enum Status{
+//     Running, Failed, Pending, Success;
+// }
 
+// enum Laptop{
+//     Macbook(900), Msi(400), HP(700), Lenovo;
+
+//     private int price;
+
+//     private Laptop(int price){
+//         this.price = price;
+//         System.out.println("in lap"+ this.name());
+//     }
+//     private Laptop(){
+//         this.price = 100;
+//     }
+
+//     public int getPrice(){
+//         return price;
+//     }
+//     public int setPrice(int price){
+//         this.price = price;
+//         return price;
+//     }
+
+// }
 
 public class P
 {
@@ -305,7 +330,7 @@ public class P
 // FINAL KEYWORD- 
     // variable
         // final int num = 8;
-        // num = 9;
+        // num = 9;     //not allowed
         // System.out.println(num);
 
     // class- cannot inherit from final A 
@@ -316,102 +341,217 @@ public class P
         // show() in B cannot override show() in A
         // Student obj1 = new Student();
         // obj1.show();
-// 
+
+// ABSTRACT-
+    //abstract methods cannot have a body
+    //can't create obj ofabstract
+    //can have constructor & static method
+
+        // Animal obj0 = new Animal(); //cannot be instantiated
+
+        // Horse obj = new Horse();
+        // obj.walk(); //walk1-if not defined 
+
+// INTERFACES-
+    // interface abstract methods cannot have body
+    // by default abstract and public
+    // multiple inheritance
+        // Horse obj = new Horse();
+        // obj.walk();
+        // Chicken chick = new Chicken();
+        // chick.walk();
+
+// ENUM- self made constants
+        // int i = 5;
+        // Status s = Status.Running;
+        // System.out.println(s.ordinal());  //Running-0
+
+        // Status[] ss = Status.values();
+        // System.out.println(ss[0]);
+
+        // for(Status s : ss){
+        // System.out.println(s+ " : "+ s.ordinal());
+        // }
+
+        // Status s = Status.Pending;
+
+        // switch(s){
+        //     case Running:
+        //         System.out.println("all good");
+        //         break;
+        //     case Failed:
+        //         System.out.println("good");
+        //         break;
+        //     case Pending:
+        //         System.out.println("poor");
+        //         break;
+        //     default: 
+        //         System.out.println("done");
+        //         break;
+        // }
+
+        // if(s == Status.Running)
+        //     System.out.println("all good");
+        // else if(s == Status.Failed)
+        //     System.out.println("No good");
+        // else if(s == Status.Pending)
+        //     System.out.println("pls wait");
+        // else
+        //     System.out.println("Done");
+
+        // Laptop lap = Laptop.Macbook;
+        // System.out.println(lap+" "+lap.getPrice());
+
+// ANNOTATIONS- 
+    //@Override
+    //@Deprecated
+    //@Functional Interface
+        // A obj = new A(){
+        //     public void show(){
+        //         System.out.println("in show");
+        //     }
+        // };
+
+        // A obj = (int i, int j) -> {
+        //         System.out.println("in show "+ i*j);
+        //     };
+        // obj.show(7,9);
+
+//  
     }
 }
 
-class Calc extends Calculator{
-    private String type;
-    private int price;
-    public int nums;
+// @FunctionalInterface
+// interface A{
+//     void show(int i, int j);
+// }
 
-    public Calc(){
-        super();
-        System.out.println("IN cons..");
-        type = "normal";
-        price =  699;
-    }
+// interface Animal{
+//     void walk();
+// }
+// interface Herbivore{}
 
-    public Calc(int nums){
-        int sum = nums+nums;
-        System.out.println(sum);
-    }
+// class Horse implements Animal{
+//     public void walk(){
+//         System.out.println("walkk");
+//     }
+// }
+// class Chicken implements Animal,Herbivore{
+//     public void walk(){
+//         System.out.println("chickku");
+//     }
+// }
 
-    public String getType(){
-        return type;
-    }
-    public int getPrice(){
-        return price;
-    }
+// abstract class Animal{
+//     abstract void walk();
 
-    public String setType(String type){
-        this.type = type;
-        return type;
-    }
-    public int setPrice(int price){
-        this.price = price;
-        return price;
-    }
-}
+//     Animal(){
+//         System.out.println("cons..");
+//     }
+// }
 
-class Car{
-    private String model;
+// class Horse extends Animal{
+//     public void walk(){
+//         System.out.println("walk2");
+//     };
 
-    public String getCar(){
-        return model;
-    }
-    public String setCar(String model){
-        this.model = model;
-        return model;
-    }
+//     Horse(){
+//         System.out.println("cons2..");
+//     }
+// }
 
-}
+// class Calc extends Calculator{
+//     private String type;
+//     private int price;
+//     public int nums;
 
-class Student extends A
-{
-    int age;
-    String name;
-    int marks;
+//     public Calc(){
+//         super();
+//         System.out.println("IN cons..");
+//         type = "normal";
+//         price =  699;
+//     }
 
-    public void Show(){
-        System.out.println("Blaa");
-    }
-}
+//     public Calc(int nums){
+//         int sum = nums+nums;
+//         System.out.println(sum);
+//     }
 
-class Calculator{
-    public Calculator(){
-        System.out.println("Calc cons..");
-    }
+//     public String getType(){
+//         return type;
+//     }
+//     public int getPrice(){
+//         return price;
+//     }
 
-    public int add(int n1, int n2){
-        int r = n1 + n2;
-        return r;
-    } 
-    public int multi(int n1, int n2){
-        int r = n1*n2;
-        return r;
-    }
-}
+//     public String setType(String type){
+//         this.type = type;
+//         return type;
+//     }
+//     public int setPrice(int price){
+//         this.price = price;
+//         return price;
+//     }
+// }
 
-final class A 
-{
-    public void show(){
-        System.out.println("IN Showw");
-    }
+// class Car{
+//     private String model;
 
-    public int loop(int i){
-        for(i=1; i<=3; i++){
-            // void show(); -- not possible
-            int j = 1;
-            while(j<=3){
-                System.out.println("IN J");
-                j++;
-            }
-            System.out.println("IN I");
-        }
-        return i;
-    }
-}
+//     public String getCar(){
+//         return model;
+//     }
+//     public String setCar(String model){
+//         this.model = model;
+//         return model;
+//     }
+
+// }
+
+// class Student extends A
+// {
+//     int age;
+//     String name;
+//     int marks;
+
+//     public void Show(){
+//         System.out.println("Blaa");
+//     }
+// }
+
+// class Calculator{
+//     public Calculator(){
+//         System.out.println("Calc cons..");
+//     }
+
+//     public int add(int n1, int n2){
+//         int r = n1 + n2;
+//         return r;
+//     } 
+//     public int multi(int n1, int n2){
+//         int r = n1*n2;
+//         return r;
+//     }
+// }
+
+// final class A 
+// {
+//     public void show(){
+//         System.out.println("IN Showw");
+//     }
+
+//     public int loop(int i){
+//         for(i=1; i<=3; i++){
+//             // void show(); -- not possible
+//             int j = 1;
+//             while(j<=3){
+//                 System.out.println("IN J");
+//                 j++;
+//             }
+//             System.out.println("IN I");
+//         }
+//         return i;
+//     }
+// }
 
 // class Stringg {
 //     public String name(String n1, String n2){
