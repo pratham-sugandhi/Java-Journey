@@ -417,8 +417,47 @@ public class P
         //     };
         // obj.show(7,9);
 
-//  
+// EXCEPTION HANDLING-
+    // Try and Catch
+        int i = 9;
+        int j = 0;
+
+        // int num[] = new int[5];
+        // String str = null;
+
+        try{
+            j = 18/i;
+            if(j == 0){
+                // throw new ArithmeticException("message..");
+                throw new NavinException("Exception..");
+            }
+
+            // System.out.println(str.length());
+            // System.out.println(num[5]);
+        }
+
+        catch(NavinException e){
+            j = 18/1;
+            System.out.println("Navinn..");
+        }
+        catch(ArithmeticException e){
+            // System.out.println("something went wrong");
+            j = 18/1;
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Out of index");
+        }
+        catch(Exception e){
+            System.out.println("Error "+ e);
+        }
+
+        System.out.println(j);
+        System.out.println("yoo");
     }
+}
+
+class NavinException extends Exception{
+    public NavinException(String string){} 
 }
 
 // @FunctionalInterface
