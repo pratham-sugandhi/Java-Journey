@@ -156,7 +156,7 @@ public class j3
     // variable
         // final int num = 8;
         // num = 9;
-        // System.out.println(num);
+        // System.out.println(num);     //
 
     // class- cannot inherit from final A 
         // A obj = new A();
