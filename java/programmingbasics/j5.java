@@ -69,7 +69,7 @@ public class j5{
 
         // t1.start();
         // t2.start();
-    
+        
     // LAMBDA-
         // Runnable obj1 = () -> {
         //     for(int i=1; i<5; i++){

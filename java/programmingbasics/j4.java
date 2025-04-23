@@ -118,57 +118,59 @@ public class j4
         // int res = obj.add(4,5);
         // System.out.println(res);
 // TYPES OF INTERFACE-
-    // NORMAL
-    // FUNCTIONAL
-    // MARKER
+    // NORMAL-ONE OR MORE
+    // FUNCTIONAL-ONE
+    // MARKER-ZERO
 // EXCEPTION HANDLING-
     // STATEMENTS-
     
-    // int i = 0;
-    // int j = 18/i;
-    // System.out.println(j);  //exception
-    // System.out.println("Byee");  //execution stops
+        // int i = 0;
+        // int j = 18/i;
+        // System.out.println(j);  //exception
+        // System.out.println("Byee");  //execution stops
 
     //exception handling
-    // int i = 2;
-    // int j = 0;
+        // int i = 2;
+        // int j = 0;
 
-    // int nums[] = new int[5];
-    // String str = null;
-    
-    // try
-    // {
-    //     j = 18/i;   //ArithmeticException
-    //     System.out.println(str.length()); 
+        // int nums[] = new int[5];
+        // String str = null;
+        
+        // try
+        // {
+        //     j = 18/i;   //ArithmeticException
+        //     System.out.println(str.length()); 
 
-    //     System.out.println(nums[1]); 
-    //     System.out.println(nums[5]); //Index 5 out of bounds for length 5
-    // }
-    // catch(ArithmeticException e)  //during exception only
-    // {
-    //     System.out.println("Cannot divide by 0.."+ e);
-    // }
-    // catch(ArrayIndexOutOfBoundsException e)  //during exception only
-    // {
-    //     System.out.println("Stays in index limits.."+ e);
-    // }
-    // catch(Exception e)  //during exception only
-    // {
-    //     System.out.println("Something went wrong.."+ e);
-    // }
+        //     System.out.println(nums[1]); 
+        //     System.out.println(nums[5]); //Index 5 out of bounds for length 5
+        // }
+        // catch(ArithmeticException e)  //during exception only
+        // {
+        //     System.out.println("Cannot divide by 0.."+ e);
+        // }
+        // catch(ArrayIndexOutOfBoundsException e)  //during exception only
+        // {
+        //     System.out.println("Stays in index limits.."+ e);
+        // }
+        // catch(Exception e)  //during exception only
+        // {
+        //     System.out.println("Something went wrong.."+ e);
+        // }
 
-    // System.out.println(j);      //execution don't stop
-    // System.out.println("Byee");     
+        // System.out.println(j);      //execution don't stop
+        // System.out.println("Byee");     
 
 // EXCEPTION HEIRARCHY-
-    // OBJECT -> THROWABLE -> 
+    // OBJECT -> 
+        // THROWABLE -> 
+
                 // EXCEPTION ->
-                        //RUNTIME EXCEPTION (UNCHECKED)- ARITHMETIC, ARRAYINDEX, NULLPOINT
-                        // SQLEXCEPTION, IOEXCEPTION (CHECKED)
+                    //RUNTIME EXCEPTION (UNCHECKED)- ARITHMETIC, ARRAYINDEX, NULLPOINT
+                    // SQLEXCEPTION, IOEXCEPTION (CHECKED)
                 // ERROR ->
-                        //THREADDEATH
-                        //IOERROR
-                        //VIRTUALMACHINE ERROR -> OUT OF MEMORY
+                    //THREADDEATH
+                    //IOERROR
+                    //VIRTUALMACHINE ERROR -> OUT OF MEMORY
 
 // EXCEPTION THROW-
     // int i = 20;
@@ -264,7 +266,7 @@ public class j4
     //     System.out.println(num);
     // }
 
-//
+//  
     }
 }
 
@@ -295,7 +297,7 @@ public class j4
 // class B extends A
 //     {
 //         @Override
-//         public void showTheDara()
+//         public void showTheData()
 //         {
 //             System.out.println("B Showw...");
 //         }
