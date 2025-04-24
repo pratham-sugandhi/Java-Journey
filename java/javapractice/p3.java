@@ -1,4 +1,7 @@
 
+import java.util.Map;
+import java.util.HashMap;
+
 public class p3{
     public static void main(String a[]){
         // ARRAYS--
@@ -100,12 +103,109 @@ public class p3{
             //     System.out.println("Byee");
             // }
 
+        // MAP- put, size, containsKey, remove, get, size()
+            // Map<String, Integer> map = new HashMap<>();
+            // map.put("Prathu", 19);
+            // map.put("Amarsh", 18);
+            // map.put("Hittu", 14);
+
+            // System.out.println(map.size());     //3
+            // System.out.println(map.remove("Prathu"));   //2
+            // System.out.println(map.containsKey("Prathu"));      //false
+            // System.out.println(map.size());
+            // System.out.println(map.get("Prathu"));
+
+        // THREADS-
+                // T obj1 = new T();
+                // H obj2 =  new H();
+
+                // obj1.start();
+                // obj2.start();
+
+            // RUNNABLE-
+                // R obj1 = new R();
+                // U obj2 = new U();
+
+                // Thread t1 = new Thread(obj1);
+                // Thread t2 = new Thread(obj2);
+
+                // t1.start();
+                // t2.start(); 
+
+            // RACE COND-
+                // Counter cnt = new Counter ();
+                // Runnable obj1 = () -> {
+                //     for(int i=1; i<=5; i++){
+                //         cnt.increment();
+                //         System.out.println(cnt.count);
+                //     }
+                // };
+                // Runnable obj2 = () -> {
+                //     for(int i=1; i<=10; i++){
+                //         cnt.increment();
+                //         System.out.println(cnt.count);
+                //     }
+                // };
+
+                // Thread t1 = new Thread(obj1);
+                // Thread t2 = new Thread(obj2);
+                
+                // t1.start();
+                // t2.start();
+
         // 
     }
 }
 
-// EXCEPTION HANDELING-
+// THREADS-
+// class Counter{
+//     int count =10;
+//     public synchronized void increment(){
+//         count++;
+//     }
+// }
 
+// class R implements Runnable{
+//     public void run(){
+//         System.out.println("Threadd");
+//         check();
+//     }
+
+//     public void check(){
+//         System.out.println("Checkedd");
+//     }
+// }
+// class U implements Runnable{
+//     public void run(){
+//         System.out.println("Threadd2");
+//         check2();
+//     }
+
+//     public void check2(){
+//         System.out.println("Checkedd2");
+//     }
+// }
+
+// class T extends Thread{
+//     public void run(){
+//         System.out.println("Threadd");
+//         check();
+//     }
+
+//     public void check(){
+//         System.out.println("Checkedd");
+//     }
+// }
+// class H extends Thread{
+//     public void run(){
+//         System.out.println("Threadd2");
+//         check2();
+//     }
+
+//     public void check2(){
+//         System.out.println("Checkedd2");
+//     }
+// }
 
 //  FUNCTIONAL EXPERIENCE-
 // @FunctionalInterface
