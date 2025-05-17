@@ -1,6 +1,10 @@
 
 import java.util.Map;
 import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
 
 public class p3{
     public static void main(String a[]){
@@ -153,6 +157,43 @@ public class p3{
                 // t1.start();
                 // t2.start();
 
+        // COLLECTIONS-
+            // List - oreder & dublicate;
+                // List<String> strList = new ArrayList<>();
+                // strList.add("Prathu");
+                // strList.add("sug");
+
+                // strList.add(1, "devendra");
+                // strList.remove(0);
+
+                // if(strList.contains("devendra")){
+                //     System.out.println("exist at"+strList.indexOf("devendra"));
+                // }
+                // else 
+                //     strList.add(1,"devendra");
+                
+            // Queue- FIFO
+                // Queue<Integer> obj = new LinkedList<>();
+                // obj.add(1);
+                // obj.add(9);
+                // obj.offer(5);
+
+                // System.out.println(obj.peek());
+                // System.out.println(obj.element());
+                // System.out.println(obj.remove());
+
+                // for(Integer i : obj){
+                //     System.out.println(i);
+                // }
+
+            // Set- unique and unorder
+                // Set<Integer> obj = new HashSet<>();
+                // obj.add(9);
+                // obj.add(5);
+                // obj.add(1);
+
+                // for(Integer i : obj)
+                // System.out.println(i);
         // 
     }
 }
@@ -217,7 +258,6 @@ public class p3{
 //         System.out.println("Woww");
 //     };
 // }
-
 // @FunctionalInterface
 // interface P  {
 //     void onlyOnce();
@@ -247,7 +287,6 @@ public class p3{
 //         System.out.println("Showw");
 //     }
 // }
-
 // @FunctionalInterface
 // interface V{
 //     void one();
